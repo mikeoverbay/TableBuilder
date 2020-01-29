@@ -1,12 +1,12 @@
 # TableBuilder
-Used to create a xml used for pkg file loook up.
-It finds and add these files:
-dds
-primitive
-visual
-model
-atlas
-
+Used to create a xml used for pkg file look up.
+It finds and add these files:</br>
+dds</br>
+primitive</br>
+visual</br>
+model</br>
+atlas</br>
+</br>
 It also stores in that <items> entry, the package files name.
 You can load the XML in to a datatable (VB or C#)and use LINQ to fine the package file a is located in.
 
