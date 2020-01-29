@@ -11,6 +11,7 @@ It also stores in that <items> entry, the package files name.
 You can load the XML in to a datatable (VB or C#)and use LINQ to fine the package file a is located in.</br>
 </br>
 '''
+    Private Sub search()
         If search_tb.Text.Length = 0 Then
             Return
         End If
@@ -33,6 +34,8 @@ You can load the XML in to a datatable (VB or C#)and use LINQ to fine the packag
         Next
         pkgs_tb.Text = pkgs.ToString
         files_tb.Text = files.ToString
+
+    End Sub
 '''
 
 This app will be intergrated in to nuTerra to speed up finding files.
