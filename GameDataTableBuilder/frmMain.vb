@@ -103,11 +103,14 @@ skip_searching:
     Private Sub seach_add(ByRef item As ZipEntry, ByRef pkg_name As String)
         'Check if this item has already been added to our list. Return if found.
         'Check if the pkg_name is even in our list.. If not, add it!
+        'removing local path of the pkg_names .. The XML file is too big!!
+        pkg_name = Path.GetFileName(pkg_name)
+        Dim fname = item.FileName
         Dim cp As Integer = 0
         For i = 0 To pkg_cnt - 1
             If thelist(i).pkg_name = pkg_name Then
                 For j = 0 To thelist(i).entry_length
-                    If item.FileName = thelist(i).file_name(j) Then
+                    If fname = thelist(i).file_name(j) Then
                         duplcate_count += 1
                         Return
                     End If
@@ -120,8 +123,8 @@ skip_searching:
         For i = 0 To pkg_cnt - 1
             If thelist(i).pkg_name Is Nothing Then
                 thelist(i).pkg_name = pkg_name
-                'its a newly added list so it has no file_names. GO ahead and add this one.
-                thelist(i).file_name(0) = item.FileName
+                'its a newly added list so it has no file_names. Go ahead and add this one.
+                thelist(i).file_name(0) = fname
                 thelist(i).entry_length += 1
                 Return
             End If
@@ -130,10 +133,10 @@ skip_searching:
 found_pkg_name:
 
         'Find the pkg list and add this item.
-        thelist(cp).file_name(thelist(cp).entry_length) = item.FileName
+        thelist(cp).file_name(thelist(cp).entry_length) = fname
         thelist(cp).entry_length += 1
         pkg_tb.Text = pkg_name
-        file_tb.Text = item.FileName
+        file_tb.Text = fname
         total_found += 1
         If cp > used_pkg_cnt Then used_pkg_cnt = cp
         Application.DoEvents() 'so we don't lock up this app
