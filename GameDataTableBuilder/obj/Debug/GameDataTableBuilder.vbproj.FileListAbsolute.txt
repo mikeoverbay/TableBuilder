@@ -1,0 +1,15 @@
+C:\GameDataTableBuilder\GameDataTableBuilder\bin\Debug\GameDataTableBuilder.exe.config
+C:\GameDataTableBuilder\GameDataTableBuilder\bin\Debug\GameDataTableBuilder.exe
+C:\GameDataTableBuilder\GameDataTableBuilder\bin\Debug\GameDataTableBuilder.pdb
+C:\GameDataTableBuilder\GameDataTableBuilder\bin\Debug\GameDataTableBuilder.xml
+C:\GameDataTableBuilder\GameDataTableBuilder\obj\Debug\GameDataTableBuilder.frmMain.resources
+C:\GameDataTableBuilder\GameDataTableBuilder\obj\Debug\GameDataTableBuilder.Resources.resources
+C:\GameDataTableBuilder\GameDataTableBuilder\obj\Debug\GameDataTableBuilder.vbproj.GenerateResource.Cache
+C:\GameDataTableBuilder\GameDataTableBuilder\obj\Debug\GameDataTableBuilder.exe
+C:\GameDataTableBuilder\GameDataTableBuilder\obj\Debug\GameDataTableBuilder.xml
+C:\GameDataTableBuilder\GameDataTableBuilder\obj\Debug\GameDataTableBuilder.pdb
+C:\GameDataTableBuilder\GameDataTableBuilder\bin\Debug\Ionic.Zip.dll
+C:\GameDataTableBuilder\GameDataTableBuilder\bin\Debug\Ionic.Zip.pdb
+C:\GameDataTableBuilder\GameDataTableBuilder\bin\Debug\Ionic.Zip.xml
+C:\GameDataTableBuilder\GameDataTableBuilder\obj\Debug\GameDataTableBuilder.vbprojResolveAssemblyReference.cache
+C:\GameDataTableBuilder\GameDataTableBuilder\obj\Debug\GameDataTableBuilder.frmFind.resources
