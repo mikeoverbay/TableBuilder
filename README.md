@@ -10,6 +10,14 @@ atlas</br>
 It also stores in that <items> entry, the package files name.
 You can load the XML in to a datatable (VB or C#)and use LINQ to fine the package file a is located in.</br>
 </br>
+You can easily load the XML in to a datatable.
+```
+        DATA_TABLE.Clear()
+        DATA_TABLE.Columns.Add("filename", GetType(String))
+        DATA_TABLE.Columns.Add("package", GetType(String))
+        DATA_TABLE.ReadXml(temp_path + "TheItemList.xml")
+```
+Searching is easy...</br>
 ```
     Private Sub search()
         If search_tb.Text.Length = 0 Then
