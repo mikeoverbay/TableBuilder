@@ -57,13 +57,7 @@ Public Class frmMain
                 For Each item In z
                     Select Case True
                         Case item.FileName.Contains("content/")
-                            If item.FileName.Contains(".primitives") Or
-                                item.FileName.Contains(".model") Or
-                                item.FileName.Contains(".dds") Or
-                                item.FileName.Contains(".atlas") Or
-                                item.FileName.Contains(".visual") Or
-                                item.FileName.Contains(".primitive") Or
-                                item.FileName.Contains(".primitive") Then
+                            If item.FileName.Contains("/lod") Then
                                 seach_add(item, PKGS(i))
                             End If
 
