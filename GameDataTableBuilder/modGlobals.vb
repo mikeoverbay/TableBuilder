@@ -5,6 +5,7 @@ Module modGlobals
         Public entry_length As Integer
         Public file_name() As String
         Public pkg_name As String
+        Public maxLod As String
     End Structure
 
     Public game_path As String

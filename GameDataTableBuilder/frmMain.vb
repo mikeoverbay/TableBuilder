@@ -11,6 +11,7 @@ Public Class frmMain
         If FolderBrowserDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
             game_path = FolderBrowserDialog1.SelectedPath
             My.Settings.game_path = game_path
+            go_btn.Enabled = True
         End If
 
     End Sub
@@ -31,13 +32,13 @@ Public Class frmMain
         Dim iPath = My.Settings.game_path
         Dim f_info = Directory.GetFiles(iPath)
 
-        Dim PKGS(150) As String
+        Dim PKGS(250) As String
         Dim p_cnt As Integer = 0
         Dim f_cnt As Integer = 0
         Dim cnt As Integer = 0
         list_size = 0
-        ReDim thelist(150)
-        For i = 0 To 149
+        ReDim thelist(250)
+        For i = 0 To 249
             thelist(i) = New list_
             ReDim thelist(i).file_name(10000)
         Next
@@ -56,12 +57,12 @@ Public Class frmMain
                 For Each item In z
                     Select Case True
                         Case item.FileName.Contains("content/")
-                            If item.FileName.Contains(".primitives") Or _
-                                item.FileName.Contains(".model") Or _
-                                item.FileName.Contains(".dds") Or _
-                                item.FileName.Contains(".atlas") Or _
-                                item.FileName.Contains(".visual") Or _
-                                item.FileName.Contains(".primitive") Or _
+                            If item.FileName.Contains(".primitives") Or
+                                item.FileName.Contains(".model") Or
+                                item.FileName.Contains(".dds") Or
+                                item.FileName.Contains(".atlas") Or
+                                item.FileName.Contains(".visual") Or
+                                item.FileName.Contains(".primitive") Or
                                 item.FileName.Contains(".primitive") Then
                                 seach_add(item, PKGS(i))
                             End If

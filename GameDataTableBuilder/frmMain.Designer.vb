@@ -91,7 +91,7 @@ Partial Class frmMain
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(463, 13)
         Me.Label1.TabIndex = 6
-        Me.Label1.Text = "This writes the data to temp\mikeo\TheItemList.xml - Set the path to res\packages" & _
+        Me.Label1.Text = "This writes the data to temp\mikeo\TheItemList.xml - Set the path to res\packages" &
     " and click 'Go'"
         '
         'frmMain
